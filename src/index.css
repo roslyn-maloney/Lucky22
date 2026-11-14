@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* ========================================
+  COLOR SYSTEM
+======================================== */
+
+:root {
+  /* Fonts */
+  --font-dm-serif: "DM Serif Display", serif;
+  --font-montserrat: "Montserrat", sans-serif;
+
+  /* Brand colors */
+  --background: #FFFDF9;
+  --foreground: #000000;
+
+  /* Casino theme */
+  --casino-crimson: #5C1314;
+  --casino-red: #A3142B;
+  --casino-gold: #C9A45C;
+
+  /* Neutral colors */
+  --casino-white: #FFFDF9;
+  --casino-black: #000000;
+  --casino-cream: #F7F0E3;
+  --casino-gold-light: #E8DDC7;
+  --casino-line: #CDC3B2;
+}
+
+/* ========================================
+   TAILWIND CUSTOM THEME
+======================================== */
+
+@theme inline {
+  --color-casino-crimson: var(--casino-crimson);
+  --color-casino-red: var(--casino-red);
+  --color-casino-gold: var(--casino-gold);
+
+  --color-casino-white: var(--casino-white);
+  --color-casino-black: var(--casino-black);
+  --color-casino-cream: var(--casino-cream);
+  --color-casino-gold-light: var(--casino-gold-light);
+  --color-casino-line: var(--casino-line);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Typography */
+  --font-display: var(--font-dm-serif);
+  --font-sans: var(--font-montserrat);
+
+  /* DM Serif Display sizes */
+  --text-title: 36px;
+  --text-h1: 30px;
+  --text-h2: 24px;
+
+  /* Montserrat sizes */
+  --text-subheading: 20px;
+  --text-body: 18px;
+  --text-sm-body: 16px;
+  --text-caption: 13px;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-montserrat), sans-serif;
+  margin: 0;
+}
